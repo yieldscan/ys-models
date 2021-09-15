@@ -3,6 +3,12 @@ const TransactionData = new mongoose.Schema(
   {
     stashId: String,
     network: String,
+    controllerId: String,
+    injectorId: String,
+    transactionType: String,
+    walletType: String,
+    ysFees: Number,
+    ysFeesPaid: Boolean,
     alreadyBonded: Number,
     stake: Number,
     transactionHash: String,

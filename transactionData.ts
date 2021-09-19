@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 const TransactionData = new mongoose.Schema(
   {
     stashId: String,
@@ -6,14 +6,17 @@ const TransactionData = new mongoose.Schema(
     controllerId: String,
     injectorId: String,
     transactionType: String,
+    sourcePage: String,
     walletType: String,
     ysFees: Number,
+    ysFeesAddress: Number,
+    ysFeesRatio: Number,
     ysFeesPaid: Boolean,
     alreadyBonded: Number,
     stake: Number,
     transactionHash: String,
     successful: Boolean,
   },
-  { timestamps: true },
+  { timestamps: true }
 );
 export default TransactionData;

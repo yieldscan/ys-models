@@ -9,7 +9,7 @@ const TransactionData = new mongoose.Schema(
     sourcePage: String,
     walletType: String,
     ysFees: Number,
-    ysFeesAddress: Number,
+    ysFeesAddress: String,
     ysFeesRatio: Number,
     ysFeesPaid: Boolean,
     alreadyBonded: Number,
